@@ -2,6 +2,9 @@
 
 Welcome to the Voice Authentication System repository! This Python desktop application utilizes voice fingerprint and spectrogram technology to identify individuals based on their unique vocal characteristics. The system can be trained on up to 8 individuals and operates in two distinct modes to ensure secure access.
 
+![image](https://github.com/MoHazem02/Voice-Authentication-System/assets/66066832/7fd74c5b-d8d1-4553-acc2-f60a5598b5e4)
+
+
 ## Features
 
 1. **Mode 1 – Security Voice Code:**
@@ -50,9 +53,6 @@ python Voice_Recognizer.py
 - Numpy
 - Scikit-learn
 
-## Screenshots
-
-You can find snapshots of the application in the "Snapshots" folder within this repository. Feel free to explore and add your own snapshots to showcase the program's functionality.
 
 ## Contributing
 
