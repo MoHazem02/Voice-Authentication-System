@@ -2,7 +2,7 @@
 
 Welcome to the Voice Authentication System repository! This Python desktop application utilizes voice fingerprint and spectrogram technology to identify individuals based on their unique vocal characteristics. The system can be trained on up to 8 individuals and operates in two distinct modes to ensure secure access.
 
-![image](https://github.com/MoHazem02/Voice-Authentication-System/assets/66066832/39e64a1d-98a8-4716-a709-c7c271785e47)
+![image](https://github.com/MoHazem02/Voice-Authentication-System/assets/66066832/2cdf3042-6a9b-4d06-a7a0-13e2e0220e75)
 
 
 ## Features
