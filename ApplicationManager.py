@@ -25,13 +25,13 @@ class ApplicationManger:
         self.wrong_mark_icon = QPixmap("Assets/Wrong.png").scaledToWidth(60)
         self.icons = [[self.wrong_mark_icon, "Denied"], [self.right_mark_icon, "Authorized"]]
     
-    def create_database(self):
-        with warnings.catch_warnings():
-            warnings.filterwarnings("ignore", category=UserWarning)
-            for name in ("Hazem", "Omar", "Taha", "Youssef"):
-                for word in ("Access", "Door", "key"):
-                    for i in range(1, 31):
-                        self.calculate_sound_features(f"Voice Dataset/{name}_{word} ({i}).ogg")
+    # def create_database(self):
+    #     with warnings.catch_warnings():
+    #         warnings.filterwarnings("ignore", category=UserWarning)
+    #         for name in ("Hazem", "Omar", "Taha", "Youssef"):
+    #             for word in ("Access", "Door", "key"):
+    #                 for i in range(1, 31):
+    #                     self.calculate_sound_features(f"Voice Dataset/{name}_{word} ({i}).ogg")
 
     @staticmethod
     def calculate_mean_var(data):
@@ -92,8 +92,6 @@ class ApplicationManger:
         self.recorded_voice, sampling_frequency = lb.load("output.ogg")
         self.ui.Spectrogram.canvas.plot_spectrogram(self.recorded_voice, sampling_frequency)
         
-        # print(f"Omar_Access ({self.c}).ogg")
-        # self.c += 1
         self.calculate_sound_features("output.ogg", False)
         model = self.train_model()
         rf_probabilities = model.predict_proba(self.features_array.reshape(1, -1))
