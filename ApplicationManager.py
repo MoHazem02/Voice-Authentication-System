@@ -92,10 +92,10 @@ class ApplicationManger:
         self.recorded_voice, sampling_frequency = lb.load("output.ogg")
         self.ui.Spectrogram.canvas.plot_spectrogram(self.recorded_voice, sampling_frequency)
         
-        self.calculate_sound_features("output.ogg", False)
-        model = self.train_model()
-        rf_probabilities = model.predict_proba(self.features_array.reshape(1, -1))
-        self.check_matching(rf_probabilities[0])
+        # self.calculate_sound_features("output.ogg", False)
+        # model = self.train_model()
+        # rf_probabilities = model.predict_proba(self.features_array.reshape(1, -1))
+        # self.check_matching(rf_probabilities[0])
 
     def check_matching(self, probs):
         statement_sums = []
